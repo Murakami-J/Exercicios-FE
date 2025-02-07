@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+
+<body>
+    <h1>EXERCÍCIO 06</h1>
+
+    <p>Insira o nome da música</p>
+    <input type="text" id="input_musica">
+    <button onclick="cadastrarMusica()">Cadastrar</button>
+
+    <button onclick="exibirMusica()">Exibir</button>
+    <br><br>
+    <div id="div_exibir"></div>
+    <br><br>
+
+    De
+    <input type="number" id="input_de">
+
+    Até
+    <input type="number" id="input_ate">
+
+    <button onclick="filtrarMusicas()">Filtrar</button>
+    <br><br>
+    <div id="div_filtrar"></div>
+</body>
+
+</html>
+
+<script>
+    const listaMusicas = [];
+
+    function cadastrarMusica() {
+        const musica = input_musica.value;
+
+        listaMusicas.push(musica)
+    }
+
+    function exibirMusica() {
+        let resultado = ""
+        for (let i = 0; i < listaMusicas.length; i++) {
+            resultado += `${listaMusicas[i]} <br>`
+        }
+
+        div_exibir.innerHTML = resultado
+    }
+
+    function filtrarMusicas() {
+        const de = Number(input_de.value) - 1
+        const ate = Number(input_ate.value)
+
+        if (de > ate) {
+            alert("O número de início deve ser menor do que o final")
+        } else {
+            let resultado = "";
+
+            for (let i = de; i < ate; i++) {
+                if (listaMusicas[i] != undefined) {
+                    resultado += `Música ${i + 1}: ${listaMusicas[i]} <br>`
+                } else {
+                    resultado += "Não há mais músicas cadastradas!"
+                    break
+                }
+            }
+
+            div_filtrar.innerHTML = resultado
+        }
+    }
+</script>

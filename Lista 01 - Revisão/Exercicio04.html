@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <h1>EXERCÍCIO 04</h1>
+
+    <p>Insira qual tabuada</p>
+    <select id="select"> 
+        <option value="#">Selecione uma opção</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <p>Número que a tabuada deve ser construída</p>
+    <input type="number" id="input_numero">
+    <br><br>
+
+    <button onclick="calcularTabuada()">Ver Tabuada</button>
+    <br><br>
+
+    <div id="div_resultado"></div>
+</body>
+</html>
+
+<script>
+    function calcularTabuada(){
+        const tabuada = select.value;
+        const numero = input_numero.value;
+        let resultado = "";
+
+        for(let i = 1; i <= numero; i ++){
+            let total = tabuada * i
+            resultado += `${tabuada} x ${i} = ${total} <br>`
+        }
+
+        div_resultado.innerHTML = resultado
+    }
+</script>

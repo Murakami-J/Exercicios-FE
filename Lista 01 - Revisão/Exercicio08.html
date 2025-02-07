@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+</head>
+
+<body>
+    <h1>EXERCÍCIO 08</h1>
+
+    <p>Insira um número positivo, que será o limite da contagem</p>
+    <input type="number" id="input_limite_contagem">
+    <br><br>
+
+    <p>Insira o segundo número</p>
+    <input type="number" id="input_divisibilidade">
+    <br><br>
+
+    <button onclick="somarMultiplos()">Somar números</button>
+    <br><br>
+
+    <div id="div_resultado"></div>
+</body>
+
+</html>
+
+<script>
+    function somarMultiplos() {
+        const limite = Number(input_limite_contagem.value);
+        const divisibilidade = Number(input_divisibilidade.value);
+
+        if (limite == "" || divisibilidade == "") {
+            alert("Preencha todos os campos")
+        } else {
+            if (limite < 0) {
+                alert("O número deve ser positivo")
+            } else if (divisibilidade < 1 || divisibilidade > limite) {
+                alert(`O segundo número deve estar entre 1 e ${limite}`)
+            } else{
+                let resultado = "";
+                let somaMultiplos = 0;
+
+                for(let i = 1; i <= limite; i++){
+                    if(i % divisibilidade == 0){
+                        resultado += `${i}, `
+                        somaMultiplos += i;
+                    }
+                }
+                
+                div_resultado.innerHTML = `<b>Números Múltiplos de ${divisibilidade}:</b> ${resultado} <br><br>
+                <b>Soma dos Múltiplos:</b> ${somaMultiplos}
+                ` 
+            }
+        }
+
+    }
+</script>

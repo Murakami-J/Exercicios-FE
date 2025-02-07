@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+
+<body>
+    <h1>EXERCÍCIO 05</h1>
+
+    <p>Insira o nome do filme</p>
+    <input type="text" id="input_filme">
+
+    <button onclick="cadastrarFilme()">Cadastrar</button>
+    <br><br>
+
+    <div id="div_resultado"></div>
+</body>
+
+</html>
+
+<script>
+    let contador = 0;
+    function cadastrarFilme() {
+        const filme = input_filme.value;
+        const listaFilmes = [];
+
+        if (filme != "") {
+            listaFilmes.push(filme);
+            let cor = ""
+
+            for (let i = 0; i < listaFilmes.length; i++) {
+                cor = contador % 2 == 0 ? "blue" : "red"
+
+                div_resultado.innerHTML += `<p style="color: ${cor}">${listaFilmes[i]}</p>`
+            }
+            contador++;
+        } else{
+            alert("Insira um filme válido")
+        }
+    }
+</script>
