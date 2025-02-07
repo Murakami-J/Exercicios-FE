@@ -1,1 +1,1 @@
-# Exerc-cios-FE
+# Exercícios-FE
