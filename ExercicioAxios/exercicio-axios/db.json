@@ -1,0 +1,10 @@
+{
+    "animes": [
+        {
+            "id": 1,
+            "titulo": "Naruto",
+            "genero": "Ação",
+            "episodios": 220
+        }
+    ]
+}

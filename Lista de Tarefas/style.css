@@ -1,0 +1,137 @@
+/* Variáveis */
+:root {
+    --primary-color: #007BFF;
+    --primary-color-hover: #005EC2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    height: 80vh;
+    width: 40vw;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 4px = eixo x / 8px = eixo y / rgba = dispersão */
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 4px;
+
+    .form-container {
+        form {
+            display: flex;
+            gap: 16px 16px;
+
+            input {
+                flex: 1;
+                /* flex: 1 2 auto 
+                    primeiro valor: o quanto que ele vai ocupar
+                    segundo valor: o tamanho que ele vai diminuir
+                    terceiro valor: o tamanho mínimo que ele terá 
+                */
+            }
+
+            button {
+                padding: 8px 16px;
+                background-color: var(--primary-color);
+                border: none;
+                color: white;
+
+                /* & = siginifica o elemento atual, ou seja, não preciso repetir o nome do elemento */
+                &:hover {
+                    background-color: var(--primary-color-hover);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .list-task {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-height: 40vh;
+        overflow-y: auto;
+        height: 40vh;
+
+        .item-task {
+            display: flex;
+            list-style: none;
+            padding: 5px 16px;
+            gap: 10px;
+            align-items: center;
+            border: 1px solid #ccc;
+
+            span {
+                flex: 1;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 10px 16px;
+                background: none;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--primary-color-hover);
+                }
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        button{
+            padding: 10px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+        }
+
+        .container-progress{
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 60px;
+            height: 30px;
+            position: relative; 
+            /* Tem que colocar o position: relative aqui porque o position:absolute pega do último relative, se não tiver o relative ele vai ser absolute da tela */
+
+            .progress{
+                width: 100%;
+                background-color: #4CAF50;
+                height: 100%;
+                border-radius: 60px 0 0 60px;
+                transition: 5s ease-in-out;
+            }
+
+            span{
+                position: absolute;
+                top: 20%;
+                left: 40%;
+            }
+        }
+    }
+}
+
+
+h1 {
+    padding: 16px 0;
+}

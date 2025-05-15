@@ -1,0 +1,24 @@
+{
+  "tarefas": [
+    {
+      "id": "1",
+      "descricao": "Estudar React",
+      "concluida": true
+    },
+    {
+      "id": "4",
+      "descricao": "Praticar exercícios",
+      "concluida": true
+    },
+    {
+      "id": "1745343682953",
+      "descricao": "Ler Poesias",
+      "concluida": false
+    },
+    {
+      "id": "1745343701513",
+      "descricao": "Passear com o cachorro",
+      "concluida": true
+    }
+  ]
+}

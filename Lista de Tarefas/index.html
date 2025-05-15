@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <section class="form-container">
+            <form id="task-form"> 
+                <input type="text" id="task-input" placeholder="Digite a descrição da tarefa..." required>
+                <button type="submit">+</button> 
+            </form>
+        </section>
+        <section>
+            <ul class="list-task" id="task-list">
+                <!-- <li class="item-task">
+                    <input type="checkbox" />
+                    <span>Passear com o gato</span>
+                    <button>✏️</button>
+                    <button>🗑️</button>
+                </li> -->
+            </ul>
+        </section>
+        <footer>
+            <div class="container-progress" id="progress-container">
+                <div class="progress" id="progress-bar"></div>
+                <span id="progress-text">0% Concluído</span>
+            </div>
+            <button id="toggle-completed">Ocultar concluídas</button>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula React</title>
+</head>
+<body>
+    <button onclick="exibirNumeros()">Clique aqui</button>
+    <div id="root"></div>
+</body>
+</html>
+
+<script>
+    function exibirNumeros(){
+        let texto = "";
+
+        root.innerHTML = '';
+        for(let index = 0; index < 3000; index++){
+            texto += index + '<br>';
+        }
+
+        root.innerHTML = texto;
+    }
+</script>

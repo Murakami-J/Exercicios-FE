@@ -1,0 +1,124 @@
+{
+  "filmes": [
+    {
+      "id": "1",
+      "nome": "O Senhor dos Anéis",
+      "avaliacao": 4.9,
+      "autor": "J.R.R. Tolkien"
+    },
+    {
+      "id": "2",
+      "nome": "Harry Potter e a Pedra Filosofal",
+      "avaliacao": 4.8,
+      "autor": "J.K. Rowling"
+    },
+    {
+      "id": "3",
+      "nome": "Star Wars: Uma Nova Esperança",
+      "avaliacao": 4.7,
+      "autor": "George Lucas"
+    },
+    {
+      "id": "4",
+      "nome": "Matrix",
+      "avaliacao": 4.6,
+      "autor": "Irmãos Wachowski"
+    },
+    {
+      "id": "5",
+      "nome": "O Poderoso Chefão",
+      "avaliacao": 4.9,
+      "autor": "Mario Puzo"
+    },
+    {
+      "id": "6",
+      "nome": "Vingadores: Ultimato",
+      "avaliacao": 4.5,
+      "autor": "Marvel Studios"
+    },
+    {
+      "id": "7",
+      "nome": "Titanic",
+      "avaliacao": 4.4,
+      "autor": "James Cameron"
+    },
+    {
+      "id": "8",
+      "nome": "A Origem",
+      "avaliacao": 4.8,
+      "autor": "Christopher Nolan"
+    },
+    {
+      "id": "9",
+      "nome": "Coringa",
+      "avaliacao": 4.7,
+      "autor": "Todd Phillips"
+    },
+    {
+      "id": "10",
+      "nome": "Pantera Negra",
+      "avaliacao": 4.6,
+      "autor": "Ryan Coogler"
+    },
+    {
+      "id": "11",
+      "nome": "Homem-Aranha: Sem Volta para Casa",
+      "avaliacao": 4.7,
+      "autor": "Jon Watts"
+    },
+    {
+      "id": "12",
+      "nome": "Doutor Estranho",
+      "avaliacao": 4.5,
+      "autor": "Scott Derrickson"
+    },
+    {
+      "id": "13",
+      "nome": "O Rei Leão",
+      "avaliacao": 4.9,
+      "autor": "Disney"
+    },
+    {
+      "id": "14",
+      "nome": "Frozen: Uma Aventura Congelante",
+      "avaliacao": 4.4,
+      "autor": "Disney"
+    },
+    {
+      "id": "15",
+      "nome": "Toy Story",
+      "avaliacao": 4.8,
+      "autor": "Pixar"
+    },
+    {
+      "id": "16",
+      "nome": "Shrek",
+      "avaliacao": 4.6,
+      "autor": "DreamWorks"
+    },
+    {
+      "id": "17",
+      "nome": "Velozes e Furiosos",
+      "avaliacao": 4.3,
+      "autor": "Universal Pictures"
+    },
+    {
+      "id": "18",
+      "nome": "Jurassic Park",
+      "avaliacao": 4.7,
+      "autor": "Steven Spielberg"
+    },
+    {
+      "id": "19",
+      "nome": "It: A Coisa",
+      "avaliacao": 4.5,
+      "autor": "Stephen King"
+    },
+    {
+      "id": "20",
+      "nome": "O Exorcista",
+      "avaliacao": 4.6,
+      "autor": "William Peter Blatty"
+    }
+  ]
+}
